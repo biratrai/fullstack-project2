@@ -18,6 +18,9 @@ The scores table contains unique id and name of every winning and losing player 
 **tournament.py**
 This file contains all the python code which is used to connect to the **tournament.db** database and all the adjoining queries that will make the backend logic for the project.
 
+**tournament_test.py**
+This is the file given to us by the course instructor. It has python code that checks whether the functions built in tournament.py is implemented correctly and the test runs successfully.
+
 
 
   
