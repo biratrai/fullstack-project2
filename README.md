@@ -6,9 +6,9 @@ This is the second project for the FullStack Nano Degree for **Courses:
 The project contains the files related to the 
 **Projects:p2: Tournament Results**
 There are three files included.
-1. tournament.sql
-2. tournament.py
-3. tournament_test.py
+	1. tournament.sql
+	2. tournament.py
+	3. tournament_test.py
 
 **tournament.sql**:
 This file contains all the schema for the underlying database. For the project we have created two tables: **player** and **scores**.
