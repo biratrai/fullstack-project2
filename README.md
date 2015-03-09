@@ -11,7 +11,7 @@ There are three files included.
   - tournament_test.py
 
 **tournament.sql**:
-This file contains all the schema for the underlying database. For the project we have created two tables: **player** and **scores**.
+This file contains all the schema for the underlying database. For the project we have created two tables: **_player_** and **_scores_**.
 The player table contains unique id and name of a every player.
 The scores table contains unique id and name of every winning and losing player in every game.
 
