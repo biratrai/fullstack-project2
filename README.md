@@ -9,6 +9,9 @@ There are three files included.
 	1. tournament.sql
 	2. tournament.py
 	3. tournament_test.py
+     - Type some Markdown on the left
+  - See HTML in the right
+  - Magic
 
 **tournament.sql**:
 This file contains all the schema for the underlying database. For the project we have created two tables: **player** and **scores**.
