@@ -35,6 +35,7 @@ Perform the following steps:
 	1. Copy paste the folder to the **fullstack/vagrant** directory
 	2. Using the terminal, change directory to fullstack/vagrant (cd fullstack/vagrant), then type **vagrant up** to launch your virtual machine.
 Note: If you haven't installed vagrant follow this [link](https://www.udacity.com/wiki/ud197/install-vagrant)
+
 	3. 
 
 
