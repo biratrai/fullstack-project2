@@ -30,7 +30,7 @@ The project can be either downloaded using the **Clone in Desktop** or direct **
 
 Running the Project
 -----------
-Perform the following steps.
+Follow the steps
 	1. item
 	2. item
 	3. item
