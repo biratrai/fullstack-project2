@@ -6,11 +6,9 @@
 import psycopg2
 import bleach
 
-
 def connect():
     """Connect to the PostgreSQL database.  Returns a database connection."""
     return psycopg2.connect("dbname=tournament")
-
 
 def deleteMatches():
     """Remove all the match records from the database."""
@@ -20,21 +18,19 @@ def deleteMatches():
     db.commit()
     db.close()
 
-
 def deletePlayers():
     """Remove all the player records from the database."""
     db = connect()
     c = db.cursor()
-    c.execute("DELETE from player")
+    c.execute("DELETE from players")
     db.commit()
     db.close()
-
 
 def countPlayers():
     """Returns the number of players currently registered."""
     db = connect()
     c = db.cursor()
-    c.execute("SELECT COUNT(*) FROM player")
+    c.execute("SELECT COUNT(*) FROM players")
 
     """ This fetchall statement fetches rows of a query result set and returns a list of tuples. """
     count = c.fetchall()
@@ -58,10 +54,9 @@ def registerPlayer(name):
     
     # Cleaning the input with bleach
     bleached_name = bleach.clean(name, strip=True)
-    c.execute("INSERT INTO player (player_name) VALUES (%s)", (bleached_name,))
+    c.execute("INSERT INTO players (player_name) VALUES (%s)", (bleached_name,))
     db.commit()
     db.close()
-
 
 def playerStandings():
     """Returns a list of the players and their win records, sorted by wins.
@@ -76,22 +71,9 @@ def playerStandings():
         wins: the number of matches the player has won
         matches: the number of matches the player has played
     """
-    # Adding Winner Query and Loser Query to list out the table which contains (id, name, wins, matches):
-    final_query = """with t1 as (select player.player_id, player.player_name, count(scores.wins) as wins
-                        from player left join scores
-                        on player.player_id = scores.wins
-                        group by player.player_id
-                        order by wins desc),
-
-                    t2 as (select player.player_id, player.player_name, count(scores.loss) as loss
-                        from player left join scores
-                        on player.player_id = scores.loss
-                        group by player.player_id
-                        order by loss desc)
-                    select t1.player_id, t1.player_name, t1.wins, loss+wins as matches from t1 full outer join t2 on t1.player_id = t2.player_id"""
     db = connect()
     c = db.cursor()
-    c.execute(final_query+";")
+    c.execute("select player_id,player_name,wins,matches from Standings Order by wins desc;")
     db.commit()
 
     """ This fetchall statement fetches rows of a query result set and returns a list of tuples which contains (id, name, wins, matches): """
@@ -99,7 +81,6 @@ def playerStandings():
     db.close()
     return results
     
-
 def reportMatch(winner, loser):
     """Records the outcome of a single match between two players.
 
@@ -109,7 +90,7 @@ def reportMatch(winner, loser):
     """
     db = connect()
     c = db.cursor()
-    c.execute("INSERT INTO scores (wins,loss) VALUES (%s,%s)",(winner,loser,))
+    c.execute("INSERT INTO scores (winner_id,loser_id) VALUES (%s,%s)",(winner,loser,))
     db.commit()
     db.close()
 
