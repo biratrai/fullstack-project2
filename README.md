@@ -33,7 +33,7 @@ Running the Project
 Perform the following steps:
 
 	1. Copy paste the folder to the **fullstack/vagrant** directory
-	2. Using the terminal, change directory to fullstack/vagrant (cd fullstack/vagrant), then type vagrant up to launch your virtual machine.
+	2. Using the terminal, change directory to fullstack/vagrant (cd fullstack/vagrant), then type **vagrant up** to launch your virtual machine.
 	3. item
 
 
