@@ -40,6 +40,7 @@ Perform the following steps:
     4. Then go to the folder fullstack/vagrant/fullstack-project2 and type python tournament_test.py.
     
  You'll get the following successful scenario:
+ 
 ![alt text](https://github.com/biratrai/fullstack-project2/blob/master/successresult/success%20result.png)
 
 
