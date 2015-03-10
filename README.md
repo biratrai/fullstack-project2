@@ -21,6 +21,13 @@ This file contains all the python code which is used to connect to the **tournam
 **tournament_test.py**
 This is the file given to us by the course instructor. It has python code that checks whether the functions built in tournament.py is implemented correctly and the test runs successfully.
 
+Downloading
+-----------
+
+The project can be either downloaded using the **Clone in Desktop** or direct **Download Zip** the zip file.
+
+
+
 
 
   
