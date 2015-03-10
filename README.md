@@ -5,6 +5,8 @@ This is the second project for the FullStack Nano Degree for **Courses:
 
 The project contains the files related to the 
 **Projects:p2: Tournament Results**
+Files Included:
+-------------
 There are three files included.
   - tournament.sql
   - tournament.py
