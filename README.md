@@ -28,6 +28,13 @@ Downloading
 
 The project can be either downloaded using the **Clone in Desktop** or direct **Download Zip** the zip file.
 
+Running the Project
+-----------
+Perform the following steps:
+	1. item
+	2. item
+	3. item
+
 
 
 
