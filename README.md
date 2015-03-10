@@ -38,9 +38,9 @@ Perform the following steps:
 
 	3. Once it is up and running, type vagrant ssh to log into it. This will log your terminal in to the virtual machine, and you'll get a Linux shell prompt
     4. Then go to the folder fullstack/vagrant/fullstack-project2 and type python tournament_test.py.
-    You'll get the following 
     
-    ![alt text](https://github.com/biratrai/fullstack-project2/blob/master/successresult/success%20result.png)
+    You'll get the following 
+![alt text](https://github.com/biratrai/fullstack-project2/blob/master/successresult/success%20result.png)
 
 
 
