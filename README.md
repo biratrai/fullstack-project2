@@ -37,7 +37,8 @@ Perform the following steps:
 	Note: If you haven't installed vagrant follow this [link](https://www.udacity.com/wiki/ud197/install-vagrant) on how to install vagrant.
 
 	3. Once it is up and running, type vagrant ssh to log into it. This will log your terminal in to the virtual machine, and you'll get a Linux shell prompt
-    4.
+    4. Then go to the folder fullstack/vagrant/fullstack-project2 and type python tournament_test.py.
+    You'll get the following 
 
 
 
